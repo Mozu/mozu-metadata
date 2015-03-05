@@ -1,0 +1,23 @@
+{
+  "name": "mozuxd-metadata",
+  "version": "0.1.0",
+  "description": "Metadata describing the available actions for a Mozu extension.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zetlen/mozuxd-metadata"
+  },
+  "keywords": [
+    "mozu",
+    "mozuxd"
+  ],
+  "author": "James Zetlen, Volusion Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zetlen/mozuxd-metadata/issues"
+  },
+  "homepage": "https://github.com/zetlen/mozuxd-metadata"
+}
