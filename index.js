@@ -95,5 +95,19 @@ module.exports = {
     'storefront.hypr': {
       
     }
+  },
+  environments: {
+    "Production/Sandbox": {
+      homeDomain: 'home.mozu.com'
+    },
+    "QA": {
+      homeDomain: 'home.mozu-qa.com'
+    },
+    "SI": {
+      homeDomain: 'home.mozu-si.com'
+    },
+    "CI": {
+      homeDomain: 'home.mozu-ci.com'
+    }
   }
 };
