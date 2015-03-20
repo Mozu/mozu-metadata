@@ -109,5 +109,15 @@ module.exports = {
     "CI": {
       homeDomain: 'home.mozu-ci.com'
     }
+  },
+  themes: {
+    "core6": {
+      repo: "mozu/core-theme",
+      version: "6"
+    },
+    "core5": {
+      repo: "mozu/core-theme",
+      version: "5"
+    }
   }
 };
