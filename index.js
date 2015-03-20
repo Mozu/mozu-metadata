@@ -38,6 +38,32 @@ module.exports = {
               updateCustomer: ['Mozu.Api.Customer.Account']
             }
           }
+        },
+        'cart.beforeAddItem': {
+            context: {
+                get: {
+                    cart: 'Mozu.Api.Commerce.Cart',
+                    customer: 'Mozu.Api.Customer.Account',
+                    auth: 'Mozu.Api.PaymentService.AuthOfSomeKind'
+                },
+                exec: {
+                    updateCart: ['Mozu.Api.Commerce.Cart'],
+                    updateCustomer: ['Mozu.Api.Customer.Account']
+                }
+            }
+        },
+        'cart.afterAddItem': {
+            context: {
+                get: {
+                    cart: 'Mozu.Api.Commerce.Cart',
+                    customer: 'Mozu.Api.Customer.Account',
+                    auth: 'Mozu.Api.PaymentService.AuthOfSomeKind'
+                },
+                exec: {
+                    updateCart: ['Mozu.Api.Commerce.Cart'],
+                    updateCustomer: ['Mozu.Api.Customer.Account']
+                }
+            }
         }
       }
     },
