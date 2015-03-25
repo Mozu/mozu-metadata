@@ -4,11 +4,6 @@
   "description": "Metadata describing the available actions for a Mozu extension.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zetlen/mozuxd-metadata"
   },
   "keywords": [
     "mozu",
