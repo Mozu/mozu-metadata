@@ -101,6 +101,102 @@
         }
     },
     {
+      "action": "api.commerce.order.beforeSubmit",
+      "contextLevel": "site",
+      "supportsMultipleCustomFunctions": false,
+      "context": {
+        "get": {
+          "order": {
+            "type": "api.commerce.order"
+          }
+        },
+        "exec": {
+          "doSomething": {
+            "paramaters": [
+              {
+                "type": "api.commerce.order"
+              }
+            ],
+            "return": {
+              "type": "undefined"
+            }
+          }
+        }
+      }
+    },
+    {
+      "action": "api.commerce.order.afterSubmit",
+      "contextLevel": "site",
+      "supportsMultipleCustomFunctions": false,
+      "context": {
+        "get": {
+          "order": {
+            "type": "api.commerce.order"
+          }
+        },
+        "exec": {
+          "doSomething": {
+            "paramaters": [
+              {
+                "type": "api.commerce.order"
+              }
+            ],
+            "return": {
+              "type": "undefined"
+            }
+          }
+        }
+      }
+    },
+    {
+      "action": "api.commerce.order.beforePrice",
+      "contextLevel": "site",
+      "supportsMultipleCustomFunctions": false,
+      "context": {
+        "get": {
+          "order": {
+            "type": "api.commerce.order"
+          }
+        },
+        "exec": {
+          "doSomething": {
+            "paramaters": [
+              {
+                "type": "api.commerce.order"
+              }
+            ],
+            "return": {
+              "type": "undefined"
+            }
+          }
+        }
+      }
+    },
+    {
+      "action": "api.commerce.order.afterPrice",
+      "contextLevel": "site",
+      "supportsMultipleCustomFunctions": false,
+      "context": {
+        "get": {
+          "order": {
+            "type": "api.commerce.order"
+          }
+        },
+        "exec": {
+          "doSomething": {
+            "paramaters": [
+              {
+                "type": "api.commerce.order"
+              }
+            ],
+            "return": {
+              "type": "undefined"
+            }
+          }
+        }
+      }
+    },
+    {
       "action": "api.commerce.order.afterAddItem",
       "contextLevel": "site",
       "supportsMultipleCustomFunctions": false,
