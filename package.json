@@ -13,5 +13,17 @@
   "bugs": {
     "url": "https://github.com/zetlen/mozuxd-metadata/issues"
   },
-  "homepage": "https://github.com/zetlen/mozuxd-metadata"
+  "homepage": "https://github.com/zetlen/mozuxd-metadata",
+  "devDependencies": {
+    "needle": "^0.9.0",
+    "nuget-runner": "^0.1.5",
+    "semver": "^4.3.3",
+    "unzip": "^0.1.11",
+    "when": "^3.7.2"
+  },
+  "nuget": {
+    "version": "^1.17.1-dev1503272013-s",
+    "host": "http://nuget-internal.corp.volusion.com:8200",
+    "package": "Mozu.InstalledApps.Contracts"
+  }
 }

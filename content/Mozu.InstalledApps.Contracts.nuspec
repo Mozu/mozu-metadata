@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Mozu.InstalledApps.Contracts</id>
+    <version>1.8.0.3</version>
+    <title>Mozu.InstalledApps.Contracts</title>
+    <authors>Mozu</authors>
+    <owners>Mozu</owners>
+    <iconUrl>http://www.gravatar.com/avatar/419634e3493eead56e7aab22abb8aef8.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>InstalledApplications' Contracts and Client</description>
+    <dependencies>
+      <dependency id="Mozu.Core.Api.Contracts" version="1.6.0.0" />
+      <dependency id="Mozu.Core.ThirdParty.Contracts" version="1.6.0.0" />
+      <dependency id="Mozu.Tenant.Contracts" version="1.5.0.0" />
+    </dependencies>
+  </metadata>
+</package>

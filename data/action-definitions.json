@@ -1,144 +1,528 @@
-{
-  "domains": [
-    "api.commerce.order",
-    "api.commerce.catalog.admin.products"
-  ],
-  "actions": [
-    {
-      "action": "api.commerce.order.getShippingRates",
-      "contextLevel": "site",
-      "supportsMultipleCustomFunctions": false,
-      "context": {
-        "get": {
-          "order": {
-            "type": "api.commerce.order"
-          }
-        },
-        "exec": {
-          "addRates": {
-            "paramaters": [
-              {
-                "type": "api.commerce.shippingRate"
-              }
-            ],
-            "return": {
-              "type": "undefined"
-            }
-          }
-        }
-      }
-    },
-    {
-      "action": "api.commerce.cart.beforeAddItem",
-      "contextLevel": "site",
-      "supportsMultipleCustomFunctions": false,
-      "context": {
-        "get": {
-          "cart": {
-            "type": "api.commerce.cart"
-          }
-        },
-        "exec": {
-          "doSomething": {
-            "paramaters": [
-              {
-                "type": "api.commerce.shippingRate"
-              }
-            ],
-            "return": {
-              "type": "undefined"
-            }
-          }
-        }
-      }
-    },
-    {
-        "action": "api.commerce.cart.afterAddItem",
-        "contextLevel": "site",
-        "supportsMultipleCustomFunctions": false,
-        "context": {
-            "get": {
-                "cart": {
-                    "type": "api.commerce.cart"
-                }
-            },
-            "exec": {
-                "doSomething": {
-                    "paramaters": [
-                        {
-                            "type": "api.commerce.shippingRate"
+﻿{
+    "domains": [
+        "api.commerce.order",
+        "api.commerce.catalog.admin.products"
+    ],
+    "actions": [
+        {
+            "action": "api.commerce.order.getShippingRates",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "addRates": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.shippingRate"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
                         }
-                    ],
-                    "return": {
-                        "type": "undefined"
                     }
                 }
             }
-        }
-    },
-    {
-        "action": "api.commerce.order.beforeAddItem",
-        "contextLevel": "site",
-        "supportsMultipleCustomFunctions": false,
-        "context": {
-            "get": {
-                "order": {
-                    "type": "api.commerce.order"
-                }
-            },
-            "exec": {
-                "doSomething": {
-                    "paramaters": [
-                        {
-                            "type": "api.commerce.order"
+        },
+        {
+            "action": "api.commerce.cart.beforeAddItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "cart": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.shippingRate"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
                         }
-                    ],
-                    "return": {
-                        "type": "undefined"
                     }
                 }
             }
-        }
-    },
-    {
-      "action": "api.commerce.order.afterAddItem",
-      "contextLevel": "site",
-      "supportsMultipleCustomFunctions": false,
-      "context": {
-        "get": {
-          "order": {
-            "type": "api.commerce.order"
-          }
         },
-        "exec": {
-          "doSomething": {
-            "paramaters": [
-              {
-                "type": "api.commerce.order"
-              }
-            ],
-            "return": {
-              "type": "undefined"
+        {
+            "action": "api.commerce.cart.afterAddItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "cart": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.shippingRate"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
             }
-          }
+        },
+         {
+            "action": "api.commerce.cart.beforeUpdateItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.cart"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.cart.afterUpdateItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.cart"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.cart.beforeDeleteItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.cart"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.cart.afterDeleteItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.cart"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.cart.beforeDeleteCart",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.cart"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.cart.afterDeleteCart",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.cart"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.cart"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.beforeAddItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.afterAddItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.beforePrice",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.afterPrice",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.beforeSubmit",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.afterSubmit",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+                {
+            "action": "api.commerce.order.beforeDeleteItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.afterDeleteItem",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.beforeAction",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.afterAction",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.beforeCreateFromCart",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.order.afterCreateFromCart",
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false,
+            "context": {
+                "get": {
+                    "order": {
+                        "type": "api.commerce.order"
+                    }
+                },
+                "exec": {
+                    "doSomething": {
+                        "paramaters": [
+                            {
+                                "type": "api.commerce.order"
+                            }
+                        ],
+                        "return": {
+                            "type": "undefined"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "action": "api.commerce.catalog.admin.products.beforeUpdateProduct",
+            "contextLevel": "masterCatalog",
+            "supportsMultipleCustomFunctions": true,
+            "context": {
+                "type": "mozu.actoins.context.api.filter"
+            }
+        },
+        {
+            "action": "api.commerce.catalog.admin.products.afterUpdateProduct",
+            "contextLevel": "masterCatalog",
+            "supportsMultipleCustomFunctions": true,
+            "context": {
+                "type": "mozu.actoins.context.api.filter"
+            }
         }
-      }
-    },
-    {
-      "action": "api.commerce.catalog.admin.products.beforeUpdateProduct",
-      "contextLevel": "masterCatalog",
-      "supportsMultipleCustomFunctions": true,
-      "context": {
-        "type": "mozu.actoins.context.api.filter"
-      }
-    },
-    {
-      "action": "api.commerce.catalog.admin.products.afterUpdateProduct",
-      "contextLevel": "masterCatalog",
-      "supportsMultipleCustomFunctions": true,
-      "context": {
-        "type": "mozu.actoins.context.api.filter"
-      }
-    }
-  ]
+    ]
 }
