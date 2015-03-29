@@ -1,5 +1,4 @@
 ﻿{
-    "__ignore": true,
     "domains": [
         "api.commerce.order",
         "api.commerce.catalog.admin.products"
