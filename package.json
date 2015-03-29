@@ -3,8 +3,13 @@
   "version": "0.5.0",
   "description": "Metadata describing the available actions for a Mozu extension.",
   "main": "index.js",
+  "config": {
+    "nugetVersion": "^1.17.1-dev1503272013-s",
+    "nugetHost": "http://nuget-internal.corp.volusion.com:8200",
+    "nugetPackage": "Mozu.InstalledApps.Contracts"
+  },
   "scripts": {
-    "update-mozu-contracts": "node utils/build.js"
+    "update-contracts": "node utils/build.js"
   },
   "keywords": [
     "mozu",
@@ -18,14 +23,8 @@
   "homepage": "https://github.com/zetlen/mozuxd-metadata",
   "devDependencies": {
     "needle": "^0.9.0",
-    "nuget-runner": "^0.1.5",
     "semver": "^4.3.3",
     "unzip": "^0.1.11",
     "when": "^3.7.2"
-  },
-  "nuget": {
-    "version": "^1.17.1-dev1503272013-s",
-    "host": "http://nuget-internal.corp.volusion.com:8200",
-    "package": "Mozu.InstalledApps.Contracts"
   }
 }

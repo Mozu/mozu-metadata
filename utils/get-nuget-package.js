@@ -38,7 +38,7 @@ module.exports = function getNugetPackage(config) {
         return reject(new Error("No qualifying release found for " + config.version + " in " + releases.map(cleanVersion)));
       }
       console.log('Release ' + qualifyingRelease + " satisfies " + config.version + ". Downloading...")
-      return resolve(needle.get(config.host + '/api/packages/' + config.package + '/' + qualifyingRelease + '/content'));
+      return resolve({ version: qualifyingRelease, contentStream: needle.get(config.host + '/api/packages/' + config.package + '/' + qualifyingRelease + '/content')});
     });
   });
 }
