@@ -15,10 +15,10 @@ getNugetPackage({
     .on('entry', function(entry) {
       if (entry.path === packageActionDefPath) {
         console.log('Extracting action definitions...')
-        entry.pipe(fs.createWriteStream(actionDefPath)).on('end', function() {
+        entry.pipe(fs.createWriteStream(actionDefPath)).on('close', function() {
           console.log('Action definitions extracted to ' + actionDefPath);
-          exec('git add ' + actionDefPath + ' && git commit -m Updating action definitions for Mozu API version ' + result.version + ' && npm version ' + result.version, {
-            cwd: '../'
+          exec('git add ' + actionDefPath + ' && git commit -m "Updating action definitions for Mozu API version ' + result.version + '" && npm version ' + result.version, {
+            cwd: './'
           }, function(err, stdout, stderr) {
             if (err) {
               return console.error('Update failed! ' + err.message);
