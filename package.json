@@ -1,6 +1,6 @@
 {
   "name": "mozuxd-metadata",
-  "version": "0.5.0",
+  "version": "1.17.1-dev1503272013-s",
   "description": "Metadata describing the available actions for a Mozu extension.",
   "main": "index.js",
   "config": {
