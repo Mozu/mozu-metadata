@@ -2,6 +2,9 @@
   "Production/Sandbox": {
     "homeDomain": "home.mozu.com"
   },
+  "Staging": {
+    "homeDomain": "home.staging.mozu.com"
+  },
   "QA": {
     "homeDomain": "home.mozu-qa.com"
   },
