@@ -9,7 +9,7 @@
     "nugetPackage": "Mozu.InstalledApps.Contracts"
   },
   "scripts": {
-    "update-contracts": "node utils/build.js"
+    "update-contracts": "npm install && npm update && node utils/build.js"
   },
   "keywords": [
     "mozu",
