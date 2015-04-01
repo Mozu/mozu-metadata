@@ -1039,7 +1039,7 @@
             "contextLevel": "masterCatalog",
             "supportsMultipleCustomFunctions": true,
             "context": {
-                "type": "mozu.actoins.context.api.filter"
+                "type": "mozu.actions.context.api.filter"
             }
         },
         {
@@ -1047,7 +1047,15 @@
             "contextLevel": "masterCatalog",
             "supportsMultipleCustomFunctions": true,
             "context": {
-                "type": "mozu.actoins.context.api.filter"
+                "type": "mozu.actions.context.api.filter"
+            }
+        },
+        {
+            "action": "api.commerce.customer.accounts.beforeAddAccount",
+            "contextLevel": "tenant",
+            "supportsMultipleCustomFunctions": true,
+            "context": {
+                "type": "mozu.actions.context.api.filter"
             }
         }
     ]
