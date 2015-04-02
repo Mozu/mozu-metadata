@@ -2,7 +2,8 @@
     "domains": [
         "api.commerce.cart",
         "api.commerce.order",
-        "api.commerce.catalog.admin.products"
+        "api.commerce.catalog.admin.products",
+        "api.commerce.customer"
     ],
     "actions": [
        {
