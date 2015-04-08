@@ -1071,6 +1071,30 @@
             "context": {
                 "type": "mozu.actions.context.api.filter"
             }
+        },
+        {
+          "action": "api.commerce.customer.accounts.verifyExternalPassword",
+          "contextLevel": "tenant",
+          "supportsMultipleCustomFunctions": false,
+          "context": {
+            "get": {
+                "externalPassword": {
+                    "type": "string"
+                },
+                "clearTextPassword": {
+                    "type": "string"
+                }
+            },
+            "exec": {
+              "setSuccess": {
+                "parameters": [
+                  {
+                    "type": "bool"
+                  }
+                ]
+              }
+            }
+          }
         }
     ]
 }
