@@ -4,7 +4,7 @@
   "description": "Metadata describing the available actions for a Mozu extension.",
   "main": "index.js",
   "config": {
-    "nugetVersion": "^1.17.3-dev1505051553-s",
+    "nugetVersion": "*",
     "nugetHost": "http://nuget-internal.corp.volusion.com:8200",
     "nugetPackage": "Mozu.InstalledApps.Contracts"
   },
