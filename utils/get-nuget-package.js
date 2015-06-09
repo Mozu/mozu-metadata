@@ -32,6 +32,7 @@ module.exports = function getNugetPackage(config) {
     }, function(err, res) {
       var releases = res.body;
       if (err) return reject(err);
+      console.log(releases.length + ' releases found: \n  ' + releases.join('\n  '));
       var qualifyingRelease = semver.maxSatisfying(releases.map(cleanVersion), config.version);
       if (!qualifyingRelease) {
         return reject(new Error("No qualifying release found for " + config.version + " in " + releases.map(cleanVersion)));

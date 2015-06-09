@@ -27,11 +27,13 @@ exec("git ls-files -m")
       throw new Error("Cannot update contracts unless package.json is clean.");
     }
   }).then(function() {
-    return getNugetPackage({
+    var conf = {
       host: process.env.npm_package_config_nugetHost,
       version: process.env.npm_package_config_nugetVersion,
       'package': process.env.npm_package_config_nugetPackage
-    });
+    };
+    console.log('Getting NuGet package ' + conf.package + ' versions satisfying ' + conf.version + ' from ' + conf.host);
+    return getNugetPackage(conf);
   }).then(function(result) {
     result.contentStream.pipe(unzip.Parse())
       .on('entry', function(entry) {
@@ -43,19 +45,21 @@ exec("git ls-files -m")
             exec('git ls-files -m')
               .then(function(out) {
                 if (out.indexOf('action-definitions.json') === -1) {
-                  throw new Error("No change to action definitions!");
+                  throw new Error("No change to action definitions was found. No update necessary!");
                 } else {
                   return exec('git add ' + actionDefPath)
                 }
               }).then(function() {
+                console.log('Committing new action definitions to Git...')
                 return exec('git commit -m "Updating action definitions for Mozu API version ' + result.version + '"');
               }).then(function() {
-                var pkg = require('./package.json');
-                pkg.version = result.version.
-                fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2), 'utf-8');
+                console.log('Updating package version...');
+                var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+                pkg.version = result.version;
+                fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2), 'utf8');
+                console.log('Adding Git tag for v' + result.version);
                 return exec('git tag -a v' + result.version + ' -m "updating contracts"');
-              }).then(function(out) {
-                console.log(out);
+              }).then(function() {
                 console.log('\nUpdate complete! Run `npm publish` now to publish to the npm registry.')
               }).catch(console.error);
 
