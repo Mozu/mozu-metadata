@@ -24,7 +24,6 @@
   "devDependencies": {
     "needle": "^0.9.0",
     "semver": "^4.3.3",
-    "unzip": "^0.1.11",
-    "when": "^3.7.2"
+    "unzip": "^0.1.11"
   }
 }

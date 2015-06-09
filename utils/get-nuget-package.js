@@ -1,6 +1,5 @@
 var assert = require('assert');
 var needle = require('needle');
-var when = require('when');
 var semver = require('semver');
 
 function cleanVersion(badVersion) {
@@ -23,7 +22,7 @@ var headers = {
 
 module.exports = function getNugetPackage(config) {
   assert(config.host && config.package, "Please supply a Nuget HTTP host and a package name.");
-  return when.promise(function(resolve, reject) {
+  return new Promise(function(resolve, reject) {
     needle.request('get', config.host + "/api/v2/package-versions/" + config.package, 
     {
       includePrerelease: true
