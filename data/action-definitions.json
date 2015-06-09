@@ -559,30 +559,6 @@
         "contextLevel": "site",
         "supportsMultipleCustomFunctions": false
     }, {
-        "action": "embedded.commerce.carts.flow",
-        "aliases": [
-            "api.commerce.carts.embedded.flow"
-        ],
-        "context": {
-            "exec": {
-                "doSomething": {
-                    "parameters": [{
-                        "type": "api.commerce.cart"
-                    }],
-                    "return": {
-                        "type": "undefined"
-                    }
-                }
-            },
-            "get": {
-                "order": {
-                    "type": "api.commerce.cart"
-                }
-            }
-        },
-        "contextLevel": "site",
-        "supportsMultipleCustomFunctions": true
-    }, {
         "action": "embedded.commerce.orders.addItem.before",
         "aliases": [
             "api.commerce.orders.embedded.beforeAddItem"
@@ -993,16 +969,6 @@
         "contextLevel": "tenant",
         "supportsMultipleCustomFunctions": true
     }, {
-        "action": "http.commerce.customer.accounts.addAccount.after",
-        "aliases": [
-            "api.commerce.customer.accounts.filter.afterAddAccount"
-        ],
-        "context": {
-            "type": "mozu.actions.context.http"
-        },
-        "contextLevel": "tenant",
-        "supportsMultipleCustomFunctions": true
-    }, {
         "action": "http.commerce.customer.accounts.addAccountAndLogin.before",
         "aliases": [
             "api.commerce.customer.accounts.filter.beforeAddAccountAndLogin"
@@ -1013,29 +979,9 @@
         "contextLevel": "site",
         "supportsMultipleCustomFunctions": true
     }, {
-        "action": "http.commerce.customer.accounts.addAccountAndLogin.after",
-        "aliases": [
-            "api.commerce.customer.accounts.filter.afterAddAccountAndLogin"
-        ],
-        "context": {
-            "type": "mozu.actions.context.http"
-        },
-        "contextLevel": "site",
-        "supportsMultipleCustomFunctions": true
-    }, {
         "action": "http.commerce.customer.accounts.updateAccount.before",
         "aliases": [
             "api.commerce.customer.accounts.filter.beforeUpdateAccount"
-        ],
-        "context": {
-            "type": "mozu.actions.context.http"
-        },
-        "contextLevel": "tenant",
-        "supportsMultipleCustomFunctions": true
-    }, {
-        "action": "http.commerce.customer.accounts.updateAccount.after",
-        "aliases": [
-            "api.commerce.customer.accounts.filter.afterUpdateAccount"
         ],
         "context": {
             "type": "mozu.actions.context.http"
