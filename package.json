@@ -1,15 +1,15 @@
 {
   "name": "mozuxd-metadata",
-  "version": "1.17.4-dev1505181422-s",
+  "version": "1.17.3",
   "description": "Metadata describing the available actions for a Mozu extension.",
   "main": "index.js",
   "config": {
-    "nugetVersion": "*",
+    "nugetVersion": ">=1.17.4-dev1505181422-s",
     "nugetHost": "http://nuget-internal.corp.volusion.com:8200",
     "nugetPackage": "Mozu.InstalledApps.Contracts"
   },
   "scripts": {
-    "update-contracts": "npm install && npm update && node utils/build.js"
+    "update-contracts": "npm install && node utils/build.js"
   },
   "keywords": [
     "mozu",
