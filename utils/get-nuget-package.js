@@ -33,9 +33,9 @@ module.exports = function getNugetPackage(config) {
       var releases = res.body;
       if (err) return reject(err);
       console.log(releases.length + ' releases found: \n  ' + releases.join('\n  '));
-      var qualifyingRelease = semver.maxSatisfying(releases, config.version, true);
+      var qualifyingRelease = semver.maxSatisfying(releases.map(cleanVersion), config.version);
       if (!qualifyingRelease) {
-        return reject(new Error("No qualifying release found for " + config.version + " in " + releases));
+        return reject(new Error("No qualifying release found for " + config.version + " in " + releases.map(cleanVersion)));
       }
       console.log('Release ' + qualifyingRelease + " satisfies " + config.version + ". Downloading...")
       return resolve({ version: qualifyingRelease, contentStream: needle.get(config.host + '/api/packages/' + config.package + '/' + qualifyingRelease + '/content')});
