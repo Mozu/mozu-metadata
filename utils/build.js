@@ -24,7 +24,7 @@ function exec(cmd) {
 exec("git ls-files -m")
   .then(function(out) {
     if (out.indexOf('package.json') !== -1) {
-      throw new Error("Cannot update contracts unless package.json is clean.");
+      throw new Error("Cannot update contracts unless package.json is unmodified. Please commit or discard changes.");
     }
   }).then(function() {
     var conf = {
@@ -68,4 +68,4 @@ exec("git ls-files -m")
           entry.autodrain();
         }
       });
-  });
+  }).catch(console.error);

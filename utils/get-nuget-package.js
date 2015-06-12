@@ -17,7 +17,7 @@ var headers = {
   DataServiceVersion: '1.0;NetFx',
   MaxDataServiceVersion: '2.0;NetFx',
   Accept: 'application/json',
-  'User-Agent': 'MozuXD Metadata Reaper'
+  'User-Agent': 'Mozu Metadata Reaper'
 };
 
 module.exports = function getNugetPackage(config) {
@@ -33,9 +33,9 @@ module.exports = function getNugetPackage(config) {
       var releases = res.body;
       if (err) return reject(err);
       console.log(releases.length + ' releases found: \n  ' + releases.join('\n  '));
-      var qualifyingRelease = semver.maxSatisfying(releases.map(cleanVersion), config.version);
+      var qualifyingRelease = semver.maxSatisfying(releases, config.version, true);
       if (!qualifyingRelease) {
-        return reject(new Error("No qualifying release found for " + config.version + " in " + releases.map(cleanVersion)));
+        return reject(new Error("No qualifying release found for " + config.version + " in " + releases));
       }
       console.log('Release ' + qualifyingRelease + " satisfies " + config.version + ". Downloading...")
       return resolve({ version: qualifyingRelease, contentStream: needle.get(config.host + '/api/packages/' + config.package + '/' + qualifyingRelease + '/content')});

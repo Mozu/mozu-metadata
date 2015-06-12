@@ -1,7 +1,7 @@
 {
-  "name": "mozuxd-metadata",
+  "name": "mozu-metadata",
   "version": "1.17.4-dev1505181422-s",
-  "description": "Metadata describing the available actions for a Mozu extension.",
+  "description": "Metadata for Mozu integrations, including environment, code action, and theme information.",
   "main": "index.js",
   "config": {
     "nugetVersion": ">=1.17.4-dev1505181422-s",
@@ -17,10 +17,6 @@
   ],
   "author": "James Zetlen, Volusion Inc.",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zetlen/mozuxd-metadata/issues"
-  },
-  "homepage": "https://github.com/zetlen/mozuxd-metadata",
   "devDependencies": {
     "needle": "^0.9.0",
     "semver": "^4.3.3",
