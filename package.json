@@ -1,10 +1,10 @@
 {
   "name": "mozu-metadata",
-  "version": "1.17.4-dev1505181422-s2",
+  "version": "1.18.1-dev1506171553-s",
   "description": "Metadata for Mozu integrations, including environment, code action, and theme information.",
   "main": "index.js",
   "config": {
-    "nugetVersion": ">=1.17.4-dev1505181422-s",
+    "nugetVersion": ">=1.18.1-dev1506171553-s",
     "nugetHost": "http://nuget-internal.corp.volusion.com:8200",
     "nugetPackage": "Mozu.InstalledApps.Contracts"
   },
