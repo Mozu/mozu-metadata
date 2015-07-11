@@ -2687,6 +2687,24 @@
             "supportsMultipleCustomFunctions": true
         },
         {
+          "action": "http.commerce.customer.accounts.updateForgottenPassword.before",
+          "aliases": [],
+          "context": {
+            "type": "mozu.actions.context.http"
+          },
+          "contextLevel": "tenant",
+          "supportsMultipleCustomFunctions": true
+        },
+        {
+          "action": "http.commerce.customer.accounts.updateForgottenPassword.after",
+          "aliases": [],
+          "context": {
+            "type": "mozu.actions.context.http"
+          },
+          "contextLevel": "tenant",
+          "supportsMultipleCustomFunctions": true
+        },
+        {
             "action": "embedded.commerce.customer.accounts.verifyExternalPassword",
             "aliases": [
                 "api.commerce.customer.accounts.embedded.verifyExternalPassword"
@@ -2741,6 +2759,51 @@
             "contextLevel": "site",
             "supportsMultipleCustomFunctions": true
         },
+
+
+        {
+          "action": "http.commerce.catalog.storefront.products.getProduct.before",
+          "aliases": [],
+          "context": {
+            "type": "mozu.actions.context.http"
+          },
+            "contextLevel": "site",
+             "beta": "true",
+          "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.commerce.catalog.storefront.products.getProduct.after",
+            "aliases": [ ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+             "beta": "true",
+            "supportsMultipleCustomFunctions": true
+        },
+
+        {
+            "action": "http.commerce.catalog.storefront.products.getProducts.before",
+            "aliases": [ ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+             "beta": "true",
+            "supportsMultipleCustomFunctions": true
+        },
+
+        {
+            "action": "http.commerce.catalog.storefront.products.getProducts.after",
+            "aliases": [ ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+             "beta": "true",
+            "supportsMultipleCustomFunctions": true
+        },
+
         {
             "action": "embedded.platform.applications.install",
             "aliases": [
