@@ -2581,7 +2581,7 @@
         "supportsMultipleCustomFunctions": false
     },
     {
-      "action": "http.commerce.order.beforeSetFulFillmentInfo",
+      "action": "http.commerce.orders.beforeSetFulFillmentInfo",
       "aliases": [],
       "context": {
         "type": "mozu.actions.context.http"
@@ -2590,7 +2590,7 @@
       "supportsMultipleCustomFunctions": true
     },
     {
-      "action": "http.commerce.order.afterSetFulFillmentInfo",
+      "action": "http.commerce.orders.afterSetFulFillmentInfo",
       "aliases": [],
       "context": {
         "type": "mozu.actions.context.http"
