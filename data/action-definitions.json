@@ -2599,6 +2599,24 @@
             "supportsMultipleCustomFunctions": true
         },
         {
+            "action": "http.commerce.orders.setBillingInfo.before",
+            "aliases": [ ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "tenant",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.commerce.orders.setBillingInfo.after",
+            "aliases": [ ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "tenant",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
             "action": "http.commerce.catalog.admin.products.updateProduct.before",
             "aliases": [
                 "api.commerce.catalog.admin.products.filter.beforeUpdateProduct"
