@@ -1,6 +1,6 @@
 {
   "name": "mozu-metadata",
-  "version": "1.18.1-dev1507301800",
+  "version": "1.18.1-dev1508032053",
   "description": "Metadata for Mozu integrations, including environment, code action, and theme information.",
   "main": "index.js",
   "config": {
