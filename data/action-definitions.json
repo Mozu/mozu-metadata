@@ -3185,6 +3185,7 @@
     "commerce.customer",
     "commerce.catalog.storefront.shipping",
     "commerce.catalog.storefront.products",
+    "commerce.payments",
     "platform.applications",
     "storefront"
   ]
