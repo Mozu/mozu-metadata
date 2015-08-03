@@ -2617,6 +2617,41 @@
             "supportsMultipleCustomFunctions": true
         },
         {
+            "action": "embedded.commerce.payments.action.performPaymentInteraction",
+            "aliases": [],
+            "context": {
+                "exec": {
+                    "addPaymentInteraction": {
+                        "parameters": [
+                            {
+                                "name": "paymentInteraction",
+                                "type": "string"
+                            }
+                        ],
+                        "return": {
+                            "type": "mozu.commerceRuntime.contracts.payments.paymentInteraction"
+                        }
+                    }
+                },
+                "get": {
+                    "payment": {
+                        "parameters": [ ],
+                        "return": {
+                            "type": "mozu.commerceRuntime.contracts.payments.payment"
+                        }
+                    },
+                    "paymentAction": {
+                        "parameters": [ ],
+                        "return": {
+                            "type": "mozu.commerceRuntime.contracts.payments.paymentAction"
+                        }
+                    }
+                }
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": false
+        },
+        {
             "action": "http.commerce.catalog.admin.products.updateProduct.before",
             "aliases": [
                 "api.commerce.catalog.admin.products.filter.beforeUpdateProduct"
