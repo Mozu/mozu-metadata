@@ -2618,7 +2618,7 @@
         },
         {
             "action": "embedded.commerce.payments.action.performPaymentInteraction",
-            "aliases": [],
+            "aliases": [ ],
             "context": {
                 "exec": {
                     "addPaymentInteraction": {
@@ -2806,6 +2806,33 @@
                 }
             },
             "contextLevel": "tenant",
+            "supportsMultipleCustomFunctions": false
+        },
+        {
+            "action": "embedded.commerce.return.retrieveReasons",
+            "aliases": [ ],
+            "context": {
+                "exec": {
+                    "setReasonList": {
+                        "parameters": [
+                            {
+                                "name": "reasonList",
+                                "type": "array"
+                            }
+                        ]
+                    }
+                },
+                "get": {
+                    "getReasonList": {
+                        "parameters": [ ],
+                        "return": {
+                            "type": "array"
+                        }
+
+                    }
+                }
+            },
+            "contextLevel": "site",
             "supportsMultipleCustomFunctions": false
         },
         {
@@ -3186,6 +3213,7 @@
     "commerce.catalog.storefront.shipping",
     "commerce.catalog.storefront.products",
     "commerce.payments",
+    "commerce.returns",
     "platform.applications",
     "storefront"
   ]
