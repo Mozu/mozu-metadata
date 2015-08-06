@@ -3203,18 +3203,195 @@
             },
             "contextLevel": "site",
             "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.search.request.before",
+            "aliases": [
+                "storefront.pages.search.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.search.request.after",
+            "aliases": [
+                "storefront.pages.search.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+
+        {
+            "action": "http.storefront.pages.productDetails.request.before",
+            "aliases": [
+                "storefront.pages.productDetails.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.productDetails.request.after",
+            "aliases": [
+                "storefront.pages.productDetails.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.category.request.before",
+            "aliases": [
+                "storefront.pages.category.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.category.request.after",
+            "aliases": [
+                "storefront.pages.category.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.cart.request.before",
+            "aliases": [
+                "storefront.pages.cart.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.cart.request.after",
+            "aliases": [
+                "storefront.pages.cart.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.checkout.request.before",
+            "aliases": [
+                "storefront.pages.checkout.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.checkout.request.after",
+            "aliases": [
+                "storefront.pages.checkout.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.orderConfirmation.request.before",
+            "aliases": [
+                "storefront.pages.orderConfirmation.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.orderConfirmation.request.after",
+            "aliases": [
+                "storefront.pages.orderConfirmation.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.myAccount.request.before",
+            "aliases": [
+                "storefront.pages.myAccount.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.myAccount.request.after",
+            "aliases": [
+                "storefront.pages.myAccount.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.404.request.before",
+            "aliases": [
+                "storefront.pages.404.request.before"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
+        },
+        {
+            "action": "http.storefront.pages.404.request.after",
+            "aliases": [
+                "storefront.pages.404.request.after"
+            ],
+            "context": {
+                "type": "mozu.actions.context.http"
+            },
+            "contextLevel": "site",
+            "supportsMultipleCustomFunctions": true
         }
     ],
-  "domains": [
-    "commerce.carts",
-    "commerce.orders",
-    "commerce.catalog.admin.products",
-    "commerce.customer",
-    "commerce.catalog.storefront.shipping",
-    "commerce.catalog.storefront.products",
-    "commerce.payments",
-    "commerce.returns",
-    "platform.applications",
-    "storefront"
-  ]
+    "domains": [
+        "commerce.carts",
+        "commerce.orders",
+        "commerce.catalog.admin.products",
+        "commerce.customer",
+        "commerce.catalog.storefront.shipping",
+        "commerce.catalog.storefront.products",
+        "commerce.payments",
+    "commerce.return",
+        "platform.applications",
+        "storefront"
+    ]
 }
