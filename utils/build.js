@@ -13,7 +13,7 @@ function exec(cmd) {
     }, function(err, stdout, stderr) {
       console.log(stderr);
       if (err) {
-        reject(err);
+        reject(new Error(stderr));
       } else {
         resolve(stdout && stdout.trim() || '');
       }
@@ -57,6 +57,8 @@ exec("git ls-files -m")
                 var pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
                 pkg.version = result.version;
                 fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2), 'utf8');
+                return exec('git commit -am "Updating package.json to ' + pkg.version + '"');
+              }).then(function() {
                 console.log('Adding Git tag for v' + result.version);
                 return exec('git tag -a v' + result.version + ' -m "updating contracts"');
               }).then(function() {
