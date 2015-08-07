@@ -2856,7 +2856,7 @@
                     }
                 },
                 "get": {
-                    "getReasonList": {
+                    "ReasonList": {
                         "parameters": [ ],
                         "return": {
                             "type": "array"
