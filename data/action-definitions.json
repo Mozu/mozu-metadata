@@ -2631,6 +2631,39 @@
                         "return": {
                             "type": "mozu.commerceRuntime.contracts.payments.paymentInteraction"
                         }
+                    },
+                    "setPaymentAmountRequested": {
+                      "parameters": [
+                        {
+                          "name": "amount",
+                          "type": "decimal"
+                        }
+                      ],
+                      "return": {
+                        "type": "mozu.commerceRuntime.contracts.payments.payment"
+                      }
+                    },
+                    "setPaymentAmountCollected": {
+                      "parameters": [
+                        {
+                          "name": "amount",
+                          "type": "decimal"
+                        }
+                      ],
+                      "return": {
+                        "type": "mozu.commerceRuntime.contracts.payments.payment"
+                      }
+                    },
+                    "setPaymentAmountCredited": {
+                      "parameters": [
+                        {
+                          "name": "amount",
+                          "type": "decimal"
+                        }
+                      ],
+                      "return": {
+                        "type": "mozu.commerceRuntime.contracts.payments.payment"
+                      }
                     }
                 },
                 "get": {
