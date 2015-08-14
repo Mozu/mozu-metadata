@@ -1,17 +1,17 @@
 {
   "Production/Sandbox": {
-    "homeDomain": "home.mozu.com"
+    "homeDomain": "https://home.mozu.com"
   },
   "Staging": {
-    "homeDomain": "home.staging.mozu.com"
+    "homeDomain": "https://home.staging.mozu.com"
   },
   "QA": {
-    "homeDomain": "home.mozu-qa.com"
+    "homeDomain": "https://home.mozu-qa.com"
   },
   "SI": {
-    "homeDomain": "home.mozu-si.com"
+    "homeDomain": "https://home.mozu-si.com"
   },
   "CI": {
-    "homeDomain": "aus02ncrprx001.dev.volusion.com"
+    "homeDomain": "http://aus02ncrprx001.dev.volusion.com"
   }
 }
