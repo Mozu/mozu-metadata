@@ -6,6 +6,9 @@
   "bin": {
     "update-arc-defs": "./bin/update-arc-defs"
   },
+  "scripts": {
+    "preversion": "./bin/update-arc-defs --out ./data/action-definitions.json"
+  },
   "keywords": [
     "mozu",
     "mozuxd"
