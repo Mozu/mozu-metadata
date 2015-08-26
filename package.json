@@ -3,13 +3,8 @@
   "version": "1.18.1-dev1508141751-hotfix1",
   "description": "Metadata for Mozu integrations, including environment, code action, and theme information.",
   "main": "index.js",
-  "config": {
-    "nugetVersion": ">=1.18.1-dev1506171553-s",
-    "nugetHost": "http://nuget-internal.corp.volusion.com:8200",
-    "nugetPackage": "Mozu.InstalledApps.Contracts"
-  },
-  "scripts": {
-    "update-contracts": "npm install && node utils/build.js"
+  "bin": {
+    "update-arc-defs": "./bin/update-arc-defs"
   },
   "keywords": [
     "mozu",
@@ -18,8 +13,11 @@
   "author": "James Zetlen, Volusion Inc.",
   "license": "MIT",
   "devDependencies": {
-    "needle": "^0.9.0",
     "semver": "^4.3.3",
     "unzip": "^0.1.11"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "needle": "^0.10.0"
   }
 }
