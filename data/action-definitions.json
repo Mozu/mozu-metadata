@@ -3469,6 +3469,30 @@
       }
     },
     {
+      "action": "http.storefront.pages.cmspage.request.before",
+      "aliases": [
+        "storefront.pages.cmspage.request.before"
+      ],
+      "domain": "storefront",
+      "contextLevel": "Site",
+      "supportsMultipleCustomFunctions": true,
+      "context": {
+        "type": "mozu.actions.context.http"
+      }
+    },
+    {
+      "action": "http.storefront.pages.cmspage.request.after",
+      "aliases": [
+        "storefront.pages.cmspage.request.after"
+      ],
+      "domain": "storefront",
+      "contextLevel": "Site",
+      "supportsMultipleCustomFunctions": true,
+      "context": {
+        "type": "mozu.actions.context.http"
+      }
+    },
+    {
       "action": "http.storefront.pages.orderConfirmation.request.before",
       "aliases": [
         "storefront.pages.orderConfirmation.request.before"
