@@ -1,4 +1,8 @@
 {
+  "core8": {
+    "repo": "mozu/core-theme",
+    "version": "^8.0.0"
+  },
   "core7": {
     "repo": "mozu/core-theme",
     "version": "^7.0.0"
