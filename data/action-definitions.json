@@ -2,6 +2,7 @@
   "domains": [
     "commerce.carts",
     "commerce.orders",
+    "commerce.settings",
     "commerce.payments",
     "commerce.catalog.admin.products",
     "commerce.customer",
@@ -2645,6 +2646,17 @@
       "action": "http.commerce.orders.setBillingInfo.after",
       "aliases": [],
       "domain": "commerce.orders",
+      "contextLevel": "Site",
+      "supportsMultipleCustomFunctions": true,
+      "context": {
+        "type": "mozu.actions.context.http"
+      }
+    },
+    {
+      "action": "http.commerce.settings.checkout.paymentsettings.updatePaymentSettings.before",
+      "aliases": [],
+      "beta": true,
+      "domain": "commerce.settings",
       "contextLevel": "Tenant",
       "supportsMultipleCustomFunctions": true,
       "context": {
@@ -2702,6 +2714,93 @@
             "return": {
               "type": "mozu.commerceRuntime.contracts.payments.payment"
             }
+          }
+        },
+        "get": {
+          "payment": {
+            "parameters": [],
+            "return": {
+              "type": "mozu.commerceRuntime.contracts.payments.payment"
+            }
+          },
+          "paymentAction": {
+            "parameters": [],
+            "return": {
+              "type": "mozu.commerceRuntime.contracts.payments.paymentAction"
+            }
+          }
+        }
+      }
+    },
+    {
+      "action": "embedded.commerce.payments.action.before",
+      "aliases": [],
+      "beta": true,
+      "domain": "commerce.payments",
+      "contextLevel": "Site",
+      "supportsMultipleCustomFunctions": true,
+      "context": {
+        "exec": {
+          "setActionAmount": {
+            "parameters": [
+              {
+                "name": "amount",
+                "type": "number"
+              }
+            ],
+            "return": {
+              "type": "mozu.commerceRuntime.contracts.payments.paymentAction"
+            }
+          }
+        },
+        "get": {
+          "payment": {
+            "parameters": [],
+            "return": {
+              "type": "mozu.commerceRuntime.contracts.payments.payment"
+            }
+          },
+          "paymentAction": {
+            "parameters": [],
+            "return": {
+              "type": "mozu.commerceRuntime.contracts.payments.paymentAction"
+            }
+          }
+        }
+      }
+    },
+    {
+      "action": "embedded.commerce.payments.action.after",
+      "aliases": [],
+      "beta": true,
+      "domain": "commerce.payments",
+      "contextLevel": "Site",
+      "supportsMultipleCustomFunctions": true,
+      "context": {
+        "exec": {
+          "setFailedStateName": {
+            "parameters": [
+              {
+                "name": "stateName",
+                "type": "string"
+              }
+            ]
+          },
+          "setSuccess": {
+            "parameters": [
+              {
+                "name": "isSuccess",
+                "type": "bool"
+              }
+            ]
+          },
+          "setNewStateName": {
+            "parameters": [
+              {
+                "name": "stateName",
+                "type": "string"
+              }
+            ]
           }
         },
         "get": {
@@ -3304,8 +3403,7 @@
     {
       "action": "http.storefront.pages.global.request.before",
       "aliases": [
-        "storefront.pages.global.beforeRequest",
-        "http.storefront.pages.global.beforeRequest"
+        "storefront.pages.global.beforeRequest"
       ],
       "domain": "storefront",
       "contextLevel": "Site",
@@ -3317,8 +3415,7 @@
     {
       "action": "http.storefront.pages.global.request.after",
       "aliases": [
-        "storefront.pages.global.afterRequest",
-        "http.storefront.pages.global.afterRequest"
+        "storefront.pages.global.afterRequest"
       ],
       "domain": "storefront",
       "contextLevel": "Site",
