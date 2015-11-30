@@ -17,7 +17,7 @@
   "SI": {
     "homeDomain": "https://home.mozu-si.com",
     "paymentServiceTenantPodDomain": "https://payments.mozu-si.com",
-    "paymentServiceTenantPodDomain": "https://payments.mozu-si.com"
+    "paymentServiceSandboxDomain": "https://payments.mozu-si.com"
   },
   "CI": {
     "homeDomain": "http://aus02ncrprx001.dev.volusion.com",
