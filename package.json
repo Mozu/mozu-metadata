@@ -20,7 +20,8 @@
     "update-defs": "node ./bin/update-arc-defs --out ./data/action-definitions.json",
     "postupdate-defs": "npm run ci-build-stable",
     "preversion": "npm run update-defs",
-    "version": "git add ./data/action-definitions.json"
+    "version": "git add ./data/action-definitions.json",
+    "prepublish": "mozu-npm-publish-check"
   },
   "keywords": [
     "mozu",
@@ -29,7 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "istanbul": "^0.4.2",
-    "mozu-validate-npm-package": "^1.1.0",
+    "mozu-validate-npm-package": "^1.2.0",
     "semver": "^5.1.0",
     "tape": "^4.4.0",
     "unzip": "^0.1.11"
