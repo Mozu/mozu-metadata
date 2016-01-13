@@ -1,27 +1,41 @@
 {
   "name": "mozu-metadata",
+  "author": "Volusion, LLC",
   "version": "2.3.1",
-  "description": "Metadata for Mozu integrations, including environment, code action, and theme information.",
+  "description": "Metadata for downstream Mozu utilities, including environments and action definitions.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mozu/mozu-metadata"
+  },
   "main": "index.js",
   "bin": {
     "update-arc-defs": "./bin/update-arc-defs"
   },
   "scripts": {
-    "preversion": "node ./bin/update-arc-defs --out ./data/action-definitions.json",
+    "ci-build": "npm test",
+    "ci-build-stable": "npm run ci-build",
+    "postci-build-stable": "mozu-validate-npm-package",
+    "test": "tape ./test/*.js",
+    "cov": "istanbul cover ./test/*.js",
+    "update-defs": "node ./bin/update-arc-defs --out ./data/action-definitions.json",
+    "postupdate-defs": "npm run ci-build-stable",
+    "preversion": "npm run update-defs",
     "version": "git add ./data/action-definitions.json"
   },
   "keywords": [
     "mozu",
     "mozuxd"
   ],
-  "author": "James Zetlen, Volusion Inc.",
   "license": "MIT",
   "devDependencies": {
-    "semver": "^4.3.3",
+    "istanbul": "^0.4.2",
+    "mozu-validate-npm-package": "^1.1.0",
+    "semver": "^5.1.0",
+    "tape": "^4.4.0",
     "unzip": "^0.1.11"
   },
   "dependencies": {
     "minimist": "^1.2.0",
-    "needle": "^0.10.0"
+    "needle": "^0.11.0"
   }
 }
