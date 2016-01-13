@@ -30,7 +30,7 @@
   "license": "MIT",
   "devDependencies": {
     "istanbul": "^0.4.2",
-    "mozu-validate-npm-package": "^1.2.0",
+    "mozu-validate-npm-package": "^1.2.1",
     "semver": "^5.1.0",
     "tape": "^4.4.0",
     "unzip": "^0.1.11"
