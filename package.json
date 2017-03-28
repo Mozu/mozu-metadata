@@ -17,8 +17,8 @@
     "test": "tape ./test/*.js",
     "cov": "istanbul cover ./test/*.js",
     "update-defs": "node ./bin/update-arc-defs --out ./data/action-definitions.json",
-    "preversion": "npm run update-defs",
-    "version": "git add ./data/action-definitions.json"
+    "preversion2": "npm run update-defs",
+    "version2": "git add ./data/action-definitions.json"
   },
   "keywords": [
     "mozu",
