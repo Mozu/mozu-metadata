@@ -1,7 +1,7 @@
 {
   "name": "mozu-metadata",
   "author": "Volusion, LLC",
-  "version": "2.3.8",
+  "version": "2.3.7",
   "description": "Metadata for downstream Mozu utilities, including environments and action definitions.",
   "repository": {
     "type": "git",
@@ -14,14 +14,14 @@
   "scripts": {
     "ci-build": "npm test",
     "ci-build-stable": "npm run ci-build",
-    "postci-build-stable": "mozu-validate-npm-package",
+
     "test": "tape ./test/*.js",
     "cov": "istanbul cover ./test/*.js",
     "update-defs": "node ./bin/update-arc-defs --out ./data/action-definitions.json",
-    "postupdate-defs": "npm run ci-build-stable",
+   
     "preversion": "npm run update-defs",
-    "version": "git add ./data/action-definitions.json",
-    "prepublish": "mozu-npm-publish-check"
+    "version": "git add ./data/action-definitions.json"
+  
   },
   "keywords": [
     "mozu",
