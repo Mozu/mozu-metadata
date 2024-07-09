@@ -1,7 +1,7 @@
 {
   "name": "mozu-metadata",
   "author": "Volusion, LLC",
-  "version": "2.3.11",
+  "version": "2.3.12",
   "description": "Metadata for downstream Mozu utilities, including environments and action definitions.",
   "repository": {
     "type": "git",
