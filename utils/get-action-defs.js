@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var needle = require('needle');
-var LATEST_DEFS_URL = "http://aus02niserv001.dev.volusion.com/Mozu.InstalledApplications.WebApi/platform/extensions/actionsManifest";
+var LATEST_DEFS_URL = "http://services-sb.qa.kubedev.kibo-dev.com/Mozu.InstalledApplications.WebApi/platform/extensions/actionsManifest";
 
 var getActionDefs = module.exports = function(opts) {
   opts = opts || {};
