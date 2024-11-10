@@ -1,78 +1,24 @@
 {
-  "Production/Sandbox": {
+  "North America (AWS)": {
     "homeDomain": "https://home.mozu.com",
     "paymentServiceTenantPodDomain": "https://pmts.mozu.com",
     "paymentServiceSandboxDomain": "https://payments-sb.mozu.com"
   },
 
-  "euw1": {
+  "Europe (AWS)": {
     "homeDomain": "https://home.euw1.kibocommerce.com",
     "paymentServiceTenantPodDomain": "http://services.euw1.kibocommerce.com",
     "paymentServiceSandboxDomain": "http://services.euw1.kibocommerce.com"
   },
-  "usc1": {
-    "homeDomain": "https://home.usc1.gcp.kibocommerce.com",
+  "North America (Google Cloud)": {
+    "homeDomain": "https://services.usc1.gcp.kibocommerce.com",
     "paymentServiceTenantPodDomain": "http://services.usc1.gcp.kibocommerce.com",
     "paymentServiceSandboxDomain": "http://services.usc1.gcp.kibocommerce.com"
   },
-  "euw4": {
-    "homeDomain": "https://home.euw4.gcp.kibocommerce.com",
+  "Europe (Google Cloud)": {
+    "homeDomain": "https://services.euw4.gcp.kibocommerce.com",
     "paymentServiceTenantPodDomain": "http://services.euw4.gcp.kibocommerce.com",
     "paymentServiceSandboxDomain": "http://services.euw4.gcp.kibocommerce.com"
-  },
-  "qa": {
-    "homeDomain": "https://home.kibong-qa.com",
-    "paymentServiceTenantPodDomain": "https://payments-qa.dev.volusion.com",
-    "paymentServiceSandboxDomain": "https://services-sandbox-mozu-qa.dev.volusion.com"
-  },
-  "dev01": {
-    "homeDomain": "https://home.dev01.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev01.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev01.kibo-dev.com"
-  },
-  "dev02": {
-    "homeDomain": "https://home.dev02.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev02.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev02.kibo-dev.com"
-  },
-  "dev03": {
-    "homeDomain": "https://home.dev03.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev03.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev03.kibo-dev.com"
-  },
-  "dev04": {
-    "homeDomain": "https://home.dev04.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev04.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev04.kibo-dev.com"
-  },
-  "dev05": {
-    "homeDomain": "https://home.dev05.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev05.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev05.kibo-dev.com"
-  },
-  "dev06": {
-    "homeDomain": "https://home.dev06.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev06.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev06.kibo-dev.com"
-  },
-  "dev07": {
-    "homeDomain": "https://home.dev07.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev07.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev07.kibo-dev.com"
-  },
-  "dev08": {
-    "homeDomain": "https://home.dev08.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev08.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev08.kibo-dev.com"
-  },
-  "dev09": {
-    "homeDomain": "https://home.dev09.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev09.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev09.kibo-dev.com"
-  },
-  "dev10": {
-    "homeDomain": "https://home.dev10.kubedev.kibo-dev.com",
-    "paymentServiceTenantPodDomain": "https://home.dev10.kibo-dev.com",
-    "paymentServiceSandboxDomain": "https://home.dev10.kibo-dev.com"
   }
+  
 }
